@@ -1,6 +1,5 @@
 import { useState, useRef, useEffect } from "react";
 import { CSSTransition } from "react-transition-group";
-import logo from './logo.svg';
 import data from './data.json';
 import './App.css';
 
@@ -14,7 +13,7 @@ function App() {
   return (
     <>
       <h1 className="header">
-        <img src={logo} className="logo" alt="logo" />
+        <img src="./logo.svg" className="logo" alt="logo" />
         <span>slinky</span>
       </h1>
       <MainMenu />
@@ -55,7 +54,7 @@ function MainMenu() {
   }
 
   return (
-    <div ref={menuRef} className="menu-wrapper" style={{ height: menuHeight }}>
+    <main ref={menuRef} className="main" style={{ height: menuHeight }}>
       <CSSTransition
         in={activeMenu === "main"}
         timeout={300}
@@ -131,7 +130,7 @@ function MainMenu() {
             ))}
         </ul>
       </CSSTransition>
-    </div>
+    </main>
   );
 
 }

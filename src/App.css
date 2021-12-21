@@ -7,13 +7,10 @@
   --icon-next: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+ICAgIDxwYXRoIGQ9Ik0xMi4yMTkgMi4yODFMMTAuNzggMy43MiAxOC4wNjIgMTFIMnYyaDE2LjA2M2wtNy4yODIgNy4yODEgMS40MzggMS40MzggOS05IC42ODctLjcxOS0uNjg3LS43MTl6IiAvPjwvc3ZnPg==) center no-repeat;
 }
 
-body {
-  text-align: center;
-}
-
 .header {
   font-size: 1.5rem;
   font-weight: 600;
+  text-align: center;
 }
 
 .logo {
@@ -28,16 +25,12 @@ ul {
   padding: 0;
 }
 
-li {
-  color: var(--text-color);
-  text-decoration: none;
-}
-
-.menu-wrapper {
+.main {
   max-width: 26.25rem;
   width: 100%;
   margin: auto;
   overflow: hidden;
+  color: var(--text-color);
 }
 
 .menu-item {
@@ -69,6 +62,10 @@ li {
   left: 1rem;
 }
 
+.menu-item:hover:after {
+  opacity: 1;
+}
+
 /* CSSTransition classes  */
 .menu-slideRight-enter {
   transform: translateX(-110%);
@@ -77,14 +74,10 @@ li {
   transform: translateX(0%);
   transition: all var(--duration) ease;
 }
-.menu-slideRight-exit {
-
-}
 .menu-slideRight-exit-active {
   transform: translateX(-110%);
   transition: all var(--duration) ease;
 }
-
 
 .menu-slideLeft-enter {
   transform: translateX(110%);
@@ -92,9 +85,6 @@ li {
 .menu-slideLeft-enter-active {
   transform: translateX(0%);
   transition: all var(--duration) ease;
-}
-.menu-slideLeft-exit {
-
 }
 .menu-slideLeft-exit-active {
   transform: translateX(110%);
