@@ -1,0 +1,44 @@
+[
+    {
+        "title": "designplox"
+    },
+    {
+      "title": "artists",
+      "menu": [
+        {
+          "title": "aerosmith",
+          "menu": [
+            {
+              "title": "get your wings",
+              "menu": [
+                {
+                  "title": "same old song and dance"
+                },
+                {
+                  "title": "train kept a-rolin'"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "eagles"
+        },
+        {
+          "title": "led zeppelin"
+        }
+      ]
+    },
+    {
+      "title": "albums"
+    },
+    {
+      "title": "songs"
+    },
+    {
+      "title": "genres"
+    },
+    {
+      "title": "settings"
+    }
+]

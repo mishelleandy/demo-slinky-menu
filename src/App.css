@@ -1,38 +1,103 @@
-.App {
+:root {
+  --bg: #f6f7f8;
+  --bg-accent: rgba(90, 200, 250, 0.25);
+  --text-color: #333;
+  --duration: 300ms;
+  --icon-size: 1rem;
+  --icon-next: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+ICAgIDxwYXRoIGQ9Ik0xMi4yMTkgMi4yODFMMTAuNzggMy43MiAxOC4wNjIgMTFIMnYyaDE2LjA2M2wtNy4yODIgNy4yODEgMS40MzggMS40MzggOS05IC42ODctLjcxOS0uNjg3LS43MTl6IiAvPjwvc3ZnPg==) center no-repeat;
+}
+
+body {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo {
+  display: block;
+  margin: 2rem auto;
+  width: 3.5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.menu-wrapper {
+  max-width: 26.25rem;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.menu-item {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  background-color: var(--bg);
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+.menu-item:hover {
+  cursor: pointer;
+  background-color: var(--bg-accent);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.next:after {
+  content: '';
+  position: absolute;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  background: var(--icon-next);
+  opacity: 0.25;
+  right: 1rem;
 }
+.back:after {
+  transform: rotate(180deg);
+  left: 1rem;
+}
+
+/* CSSTransition classes  */
+.menu-slideRight-enter {
+  transform: translateX(-110%);
+}
+.menu-slideRight-enter-active {
+  transform: translateX(0%);
+  transition: all var(--duration) ease;
+}
+.menu-slideRight-exit {
+
+}
+.menu-slideRight-exit-active {
+  transform: translateX(-110%);
+  transition: all var(--duration) ease;
+}
+
+
+.menu-slideLeft-enter {
+  transform: translateX(110%);
+}
+.menu-slideLeft-enter-active {
+  transform: translateX(0%);
+  transition: all var(--duration) ease;
+}
+.menu-slideLeft-exit {
+
+}
+.menu-slideLeft-exit-active {
+  transform: translateX(110%);
+  transition: all var(--duration) ease;
+}
+
