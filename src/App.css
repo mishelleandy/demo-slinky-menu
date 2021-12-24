@@ -57,8 +57,18 @@ ul {
   opacity: 0.25;
   right: 1rem;
 }
+
+.back {
+  height: 47px;
+}
 .back:after {
+  content: '';
+  position: absolute;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  background: var(--icon-next);
   transform: rotate(180deg);
+  opacity: 0.25;
   left: 1rem;
 }
 
@@ -91,3 +101,20 @@ ul {
   transition: all var(--duration) ease;
 }
 
+
+.main-menu {
+  position: relative;
+  transition: transform 0.3s ease;
+}
+.sub-menu {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+}
+.show {
+  display: block;
+}
+.hidden {
+  display: none;
+}
