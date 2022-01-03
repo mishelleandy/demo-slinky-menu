@@ -1,6 +1,5 @@
 {
   "name": "demo-menu",
-  "homepage": "https://github.com/mishelleandy/demo-slinky-menu",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
