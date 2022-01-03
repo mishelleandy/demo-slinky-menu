@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.5c0003d9.css",
-    "main.js": "/static/js/main.cb40ac3d.js",
-    "index.html": "/index.html",
-    "main.5c0003d9.css.map": "/static/css/main.5c0003d9.css.map",
-    "main.cb40ac3d.js.map": "/static/js/main.cb40ac3d.js.map"
+    "main.css": "/demo-slinky-menu/static/css/main.5c0003d9.css",
+    "main.js": "/demo-slinky-menu/static/js/main.cb40ac3d.js",
+    "index.html": "/demo-slinky-menu/index.html",
+    "main.5c0003d9.css.map": "/demo-slinky-menu/static/css/main.5c0003d9.css.map",
+    "main.cb40ac3d.js.map": "/demo-slinky-menu/static/js/main.cb40ac3d.js.map"
   },
   "entrypoints": [
     "static/css/main.5c0003d9.css",
