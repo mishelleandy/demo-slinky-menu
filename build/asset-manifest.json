@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.5c0003d9.css",
-    "main.js": "/static/js/main.cb40ac3d.js",
-    "index.html": "/index.html",
-    "main.5c0003d9.css.map": "/static/css/main.5c0003d9.css.map",
-    "main.cb40ac3d.js.map": "/static/js/main.cb40ac3d.js.map"
+    "main.css": "/mishelleandy/demo-slinky-menu/static/css/main.5c0003d9.css",
+    "main.js": "/mishelleandy/demo-slinky-menu/static/js/main.cb40ac3d.js",
+    "index.html": "/mishelleandy/demo-slinky-menu/index.html",
+    "main.5c0003d9.css.map": "/mishelleandy/demo-slinky-menu/static/css/main.5c0003d9.css.map",
+    "main.cb40ac3d.js.map": "/mishelleandy/demo-slinky-menu/static/js/main.cb40ac3d.js.map"
   },
   "entrypoints": [
     "static/css/main.5c0003d9.css",
